@@ -19,8 +19,8 @@ function Weather() {
         }
     }
 
-    const GetCoordinatesUrl = `/api/User/GetCoordinatesFromCityName?Name=${location}`
-    const GetWeatherUrl = `/api/User/GetWeatherFromCoordinates?lat=${lat}&lon=${lon}`
+    const GetCoordinatesUrl = `/api/Weather/GetCoordinatesFromCityName?Name=${location}`
+    const GetWeatherUrl = `/api/Weather/GetWeatherFromCoordinates?lat=${lat}&lon=${lon}`
 
     const searchLocation = async(event) => {
         if (event.key === 'Enter') {
